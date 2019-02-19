@@ -1,10 +1,13 @@
+// blog.naver.com/ljy9378
+// Copyright by 로졔 2019
+
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> //exit 호출을 위한 헤더 선언
 
 int main(){
 	int I, *pInt; //정수 변수 I, 정수 포인터 pInt
 	float F, *pFloat; //실수 변수 F, 실수 포인터 pFloat
-	
+    
 	//메모리 부족으로 malloc 호출이 실패한다면 프로그램 종료 
 	if ((pInt = (int*)malloc(sizeof(int))) == NULL || (pFloat = (float*)malloc(sizeof(float))) == NULL){
 		fprintf(stderr, "Insufficient memory");
