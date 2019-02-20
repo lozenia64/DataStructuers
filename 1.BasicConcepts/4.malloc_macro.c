@@ -6,7 +6,7 @@
 
 // 포인터 p, 자료형의 크기 s
 #define MALLOC(p,s) \
-    if ((p = malloc(sizeof(s))) == NULL) { \
+    if ((p = malloc(s) == NULL) { \
         fprintf(stderr, "Insufficient memory"); \
 		exit(EXIT_FAILURE); \
     }
