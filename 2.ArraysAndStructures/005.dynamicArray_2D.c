@@ -23,4 +23,5 @@ int main(){
     int **Arr;
     Arr = make2D(3,5);
     Arr[1][3] = 1;
+    free(Arr);
 }

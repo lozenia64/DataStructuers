@@ -15,12 +15,12 @@
 void printArr(int *arr, int size){
     int i;
     printf("Address Value\n");
-    for(i=0; i<size; i++) 
-		printf("%d %d\n", &arr[i], arr[i]);
+    for(i=0; i<size; i++) printf("%d %d\n", &arr[i], arr[i]);
 }
 
 int main(){
     int *Arr;
     CALLOC(Arr, 10, sizeof(int));
     printArr(Arr,10);
+    free(Arr);
 }

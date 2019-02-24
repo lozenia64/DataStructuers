@@ -16,4 +16,5 @@ int main(){
 		exit(EXIT_FAILURE);
 	}
 	MALLOC(Arr, n*sizeof(n));
+	free(Arr);
 }
