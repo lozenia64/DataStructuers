@@ -1,3 +1,6 @@
+// blog.naver.com/ljy9378
+// Copyright by 로졔 2019
+
 #include <stdio.h>
 
 void print(int *ptr, int rows){

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define MALLOC(p,s) \
-    if ((p = malloc(sizeof(s))) == NULL) { \
+    if ((p = malloc(s)) == NULL) { \
         fprintf(stderr, "Insufficient memory"); \
 		exit(EXIT_FAILURE); \
     }
