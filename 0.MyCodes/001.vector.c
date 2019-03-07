@@ -56,4 +56,6 @@ int main(){
     }
     for(i=0; i<=lastOfVector; i++)
         printf("%d ", vector[i].key);
+    
+    free(vector);
 }
